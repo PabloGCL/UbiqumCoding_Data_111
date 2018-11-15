@@ -6,7 +6,7 @@ for(i in 1:ncol(SurveyComplete)){
   qqnorm(SurveyComplete[,i],main=paste("Normal Q-Qplot of", colnames(SurveyComplete)[i])) #survey[,i] to retrieve column i 
   qqline(SurveyComplete[,i], col="red") #add qqnormal line
   hist(SurveyComplete[,i], main=paste("Histogram of", colnames(SurveyComplete)[i]),xlab=colnames(SurveyComplete)[i])
-  }#else´{
+  }#elseï¿½{
     #barplot(SurveyComplete[,i])
   #}
 }
@@ -60,7 +60,8 @@ Fibonacci <- function(number){
  j <- i
  i <- sum
  print(sum)
- c[n] <- sum
+ fib[n] <- sum
   }
+ return(fib)
 }
-Fibonacci(10)
+fib10<-Fibonacci(10)
