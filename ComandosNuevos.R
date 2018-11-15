@@ -54,12 +54,13 @@ Fibonacci <- function(number){
   i=0
   j=1
   sum=0
- fibo <- list()
+ fib <- c(1:number)
   for (n in 1:number){
  sum <- i+j
  j <- i
  i <- sum
  print(sum)
+ c[n] <- sum
   }
 }
 Fibonacci(10)
